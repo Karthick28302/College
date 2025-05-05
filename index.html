@@ -5,6 +5,26 @@
 href="favicon.ico">
 
 <style>
+h1{
+color:rgb(255,255,255);
+}
+
+h2{
+color:rgb(255,255,255);
+}
+
+p{
+color:rgb(255,255,255);
+}
+
+body{
+background-image:
+url('Sample Image.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+
 table {
 border:1px solid black;
 border-radius: 10px;
@@ -23,29 +43,49 @@ tr:nth-child(even),td:nth-child(even) {
 }
 th:nth-child(even) {
   background-color: #D6EEEE;
+}
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
 </style>
 
 <body style="background-color:rgb(255,255,255); border:2px solid black">
 
 <h1 style="text-align:center">Karthick C</h1>
 
+<p><a href="#E1">Click to View Experience</a></p>
+
+<p><a href="#Q1">Click to View Qualification</a></p>
 <hr>
 
 <h2><u>Contect Details</u></h2>
 
-<p>Phone Number:- 72042 49644</p>
+<div class="grid-container">
 
+<div>
+<h2><u>Contect Number</u></h2>
+
+<p>72042 49644</p>
+</div>
+
+<div>
 <h2><u>Address</u></h2>
 
-<address>
+<address style="color:rgb(255,255,255)";>
 4th Cross, Veerabhadrappa
 Road,<br> 
 Ramaswamipalya,Kammanahalli,<br>Bangaluru,Karnataka-560033
 </address>
+</div>
 
+<div>
 <h2><u>Email Id</u> 
 </h2><p>karthick20040812@gmail.com</p>
+</div>
+
+</div>
 
 <hr>
 
@@ -55,11 +95,11 @@ Ramaswamipalya,Kammanahalli,<br>Bangaluru,Karnataka-560033
 
 <hr>
 
-<table style="border:1px solid black;">
-<caption style="font-size:30px;font-family:Arial, Helvetica, sans-serif;">Qualification</caption>
+<table style="border:1px solid white;">
+<caption style="font-size:30px;font-family:Arial, Helvetica, sans-serif; color:rgb(255,255,255);">Qualification</caption>
 
-<tr>
-<th colspan="4"; style="font-size:35px;">Qualification</th>
+<tr  id="Q1">
+<th style="color:rgb(255,255,255);" colspan="4"; style="font-size:35px;" >Qualification</th>
 </tr>
 
 <tr>
@@ -70,9 +110,9 @@ Ramaswamipalya,Kammanahalli,<br>Bangaluru,Karnataka-560033
 </tr>
 
 <tr>
-<th>Institution</th>
+<th style="color:rgb(255,255,255)";>Institution</th>
 <td>Indo Asian Degree College</td>
-<td>St Paul's PU College</td>
+<td style="color:rgb(255,255,255)";>St Paul's PU College</td>
 <td>M.M.E.T English High School</td>
 </tr>
 
@@ -84,9 +124,9 @@ Ramaswamipalya,Kammanahalli,<br>Bangaluru,Karnataka-560033
 </tr>
 
 <tr>
-<th>Pass of Year</th>
+<th style="color:rgb(255,255,255)";>Pass of Year</th>
 <td>2023-present</td>
-<td>2020-2023</td>
+<td style="color:rgb(255,255,255)";>2020-2023</td>
 <td>2019-2020</td>
 </tr>
 
@@ -97,20 +137,30 @@ Ramaswamipalya,Kammanahalli,<br>Bangaluru,Karnataka-560033
 <h2><u>Certification</u></h2>
 
 <dl>
-<dt><u>AWS (Cloud Computing Basics)</u></dt>
+<dt style="color:rgb(255,255,255)";><u>AWS (Cloud Computing Basics)</u></dt>
 
-<dd>Demonstrates a solid understanding of basic AWS Cloud services and concepts, proving foundational knowledge required to begin utilizing AWS for cloud computing.</dd>
+<dd style="color:rgb(255,255,255)";>Demonstrates a solid understanding of basic AWS Cloud services and concepts, proving foundational knowledge required to begin utilizing AWS for cloud computing.</dd>
 
-  <dt><u>Computer Basics</u></dt>
+  <dt style="color:rgb(255,255,255)";><u>Computer Basics</u></dt>
 
-<dd>Certified in essential computer skills, including knowledge of hardware, software, and basic operations. Demonstrates proficiency in using computers and navigating digital tools effectively.</dd>
+<dd style="color:rgb(255,255,255)";>Certified in essential computer skills, including knowledge of hardware, software, and basic operations. Demonstrates proficiency in using computers and navigating digital tools effectively.</dd>
 
 </dl>
 <hr>
 
-<h2><u>Experience</u></h2>
+<h2 id="E1"><u>Experience</u></h2>
 
-<ul>
+<h1 id="myExperience">How Many Years of Experiences?</h1>
+
+<button onclick="displayResult()">Change Text</button>
+
+<script>
+function displayResult()
+{
+ document.getElementById("myExperience").innerHTML = "I Have 3 Years of Experience";
+}
+</script>
+<ul style="color:rgb(255,255,255)";>
 <li>Infact's Solution</li>
 <ul>
 <li>2023-Present</li>
@@ -137,3 +187,11 @@ Company_	setting. Engaged with customers, handled product packaging, and helped 
 </ul>
 
 </ul>
+
+<hr>
+<h2>Linked In Profile</h2>
+
+<iframe src="https://www.linkedin.com/" name="iframe_a" height="300px" width="100%"
+title="Iframe LinkedIn"></iframe>
+
+<p><a href="https://www.linkedin.com/in/karthick-c-a23b9a336/?trk=opento_sprofile_details" traget="iframe_a">LinkedIn.com</a></p>
