@@ -7,6 +7,8 @@ href="favicon.ico">
 <style>
 h1{
 color:rgb(255,255,255);
+font-size:60px;
+font-family: cursive;
 }
 
 h2{
@@ -53,7 +55,13 @@ th:nth-child(even) {
 
 <body style="background-color:rgb(255,255,255); border:2px solid black">
 
-<h1 style="text-align:center">Karthick C</h1>
+<h1 style="text-align:center";>Karthick C</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
 
 <p><a href="#E1" style="color:rgb(255,255,255)";>Click to View Experience</a></p>
 
@@ -150,7 +158,7 @@ Ramaswamipalya,Kammanahalli,<br>Bangaluru,Karnataka-560033
 
 <h2 id="E1"><u>Experience</u></h2>
 
-<h1 id="myExperience">How Many Years of Experiences?</h1>
+<h2 id="myExperience">How Many Years of Experiences?</h1>
 
 <button onclick="displayResult()">Change Text</button>
 
@@ -189,9 +197,8 @@ Company_	setting. Engaged with customers, handled product packaging, and helped 
 </ul>
 
 <hr>
-<h2>Linked In Profile</h2>
+<h2><u>Linked In Profile</u></h2>
 
-<iframe src="https://www.linkedin.com/" name="iframe_a" height="300px" width="100%"
-title="Iframe LinkedIn"></iframe>
-
-<p><a href="https://www.linkedin.com/in/karthick-c-a23b9a336/?trk=opento_sprofile_details" traget="iframe_a">LinkedIn.com</a></p>
+<button onclick="window.open('https://www.linkedin.com/in/karthick-c-a23b9a336/?trk=opento_sprofile_details', '_blank')">
+  View LinkedIn Profile
+</button>
